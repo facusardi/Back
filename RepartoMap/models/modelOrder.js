@@ -1,5 +1,7 @@
 import {DataTypes} from "sequelize"
 import sequelize from "../config/sequelize";
+import User from "./modelUser.js";
+import State from "./modelState.js";
 
 const Order = sequelize.define("Order", {
     order_id: {
@@ -39,5 +41,7 @@ const Order = sequelize.define("Order", {
     }
 );
 
+Order.belongsTo(User, { foreignKey: "user_id" });
+Order.belongsTo(State, { foreignKey: "state_id" });
 
 export default Order;
