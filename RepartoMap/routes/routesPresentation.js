@@ -5,7 +5,7 @@ import {
     createPresentation,
     updatePresentation,
     deletePresentation
-} from "../controllers/presentationController.js";
+} from "../controllers/controlerPresentation.js";
 
 const router = express.Router();
 

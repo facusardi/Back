@@ -5,7 +5,7 @@ import {
     createOrder,
     deleteOrder,
     updateOrder
-} from "../controllers/orderController.js";
+} from "../controllers/controlerOrder.js";
 
 const router = express.Router();
 // Ruta para obtener todos los pedidos
